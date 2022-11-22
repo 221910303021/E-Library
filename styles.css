@@ -1,0 +1,66 @@
+body{
+  background-color: #EDDBC0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+#Library-Header{
+height: 16rem;
+background-color: #DD5353;
+position: relative;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translate(45%,-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(50%,-50%);
+      opacity: 1;
+    }
+  }
+
+.Image-1{
+  animation: 1s ease-in 0s 1 slideInFromLeft;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 50%;
+  bottom: 1px;
+}
+
+.form-check{
+      margin: 0 10px 0 10px;
+}
+.form-check-input{
+  cursor: pointer;
+}
+#space-padding{
+  height: 1rem;
+  background-color: #EDDBC0;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+}
+
+.search-box{
+  margin-left: 5rem;
+}
+
+#Book-list{
+  width: 60rem;
+  background: #F5EFE6;
+  margin-top: 2rem;
+  overflow: auto;
+}
+
+table{
+  table-layout: fixed;
+}
+
+tr{
+  border-radius:10px;
+}

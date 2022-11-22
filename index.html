@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Library Management</title>
+
+<!-- CSS STYLESHEETS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+
+<!-- JS SCRIPTS -->
+
+  </head>
+  <body>
+    <section id="title" class="color-section">
+      <div class="container-fluid " id="Library-Header">
+        <div class="Image-1">
+          <img src="E-Library.png" alt="" width="500px" >
+        </div>
+        </div>
+        <div class="container-fluid" id="navbar">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-light bg-light nav-bag">
+            <form class="form-inline">
+              <div class="input-group search-box">
+                <input type="text" class="form-control search-box-inner" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" style="width:30rem;" id="myInput" onkeyup="searchBook()">
+              </div>
+              <div class="form-check">
+                <h1 style="font-size: 18px;margin-bottom: 0;">Filter by: </h1>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="check-title">
+                <label class="form-check-label" for="flexRadio1">
+                  Title
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="check-author">
+                <label class="form-check-label" for="flexRadio2">
+                  Author
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="check-subject">
+                <label class="form-check-label" for="flexRadio3">
+                  Subject
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="check-publishdate">
+                <label class="form-check-label" for="flexRadio4">
+                  Publish-Date
+                </label>
+              </div>
+            </form>
+          </nav>
+          </div>
+          <div class="container-fluid " id="space-padding">
+
+            </div>
+          <div class="container-fluid " id="Book-list">
+            <table class="table table-hover" id="table">
+              <thead>
+                <tr>
+                  <th scope="col">S.No.</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Publish-Date</th>
+                </tr>
+              </thead>
+              <tbody id="bookTable">
+                <tr>
+                  <td>1.</td>
+                  <td>The Origin of Species</td>
+                  <td>Charles Darwin</td>
+                  <td>Science</td>
+                  <td>1859</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Campbell Biology</td>
+                  <td>Lisa-A-urry</td>
+                  <td>Science</td>
+                  <td>Oct 29,2016</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Encyclopedia of Mathematics</td>
+                  <td>James Stuart Tanton</td>
+                  <td>Mathematics</td>
+                  <td>June 1,2005</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>The Man Who Counted</td>
+                  <td>Leslie Clark</td>
+                  <td>Mathematics</td>
+                  <td>23 March,1993</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Death Script</td>
+                  <td>Ashutosh Bhardhwaj</td>
+                  <td>Social</td>
+                  <td>2011</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>The Univeral History of Numbers</td>
+                  <td>Georges Ifrah</td>
+                  <td>Mathematics</td>
+                  <td>17 Dec,1998</td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>The Sikhs</td>
+                  <td>Kushwan Singh</td>
+                  <td>Social</td>
+                  <td>1539</td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>The triumph of Numbers</td>
+                  <td>I Bernard Cohen</td>
+                  <td>Mathematics</td>
+                  <td>31 May,2005</td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td>Ideas And Opinions</td>
+                  <td>Albert Einstein</td>
+                  <td>Biology</td>
+                  <td>1955</td>
+                </tr>
+                <tr>
+                  <td>10.</td>
+                  <td>Double Helix</td>
+                  <td>James D.Watson</td>
+                  <td>Biology</td>
+                  <td>Nov 6,2012</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+      </section>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
